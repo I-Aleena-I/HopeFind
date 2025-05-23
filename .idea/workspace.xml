@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5b14d0-75f3-4d73-9bde-1b82d4d91825" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/HopeFind.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mindrot_jbcrypt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HopeFind.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TestAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TestDatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/Dashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/LoginForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/RegisterForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/ComplaintDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Complaint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ComplaintService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/ComplaintServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/ComplaintForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/HopeFind.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HopeFind.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +34,16 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="23" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="23" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -55,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ComplaintServiceTest.executor": "Run",
     "Application.HopeFind.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.TestAuthService.executor": "Run",
@@ -65,17 +67,33 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/sem 5/SCD/Project/New folder/HopeFind/lib/mysql-connector-j-9.3.0.jar",
+    "last_opened_file_path": "D:/sem 5/SCD/Project/New folder/HopeFind",
     "onboarding.tips.debug.path": "D:/sem 5/SCD/Project/HopeFind/src/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TestDatabaseConnection">
+  <component name="RunManager" selected="Application.HopeFind">
+    <configuration name="ComplaintServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.ComplaintServiceTest" />
+      <module name="HopeFind" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HopeFind" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ui.Main" />
       <module name="HopeFind" />
@@ -111,6 +129,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ComplaintServiceTest" />
         <item itemvalue="Application.TestDatabaseConnection" />
         <item itemvalue="Application.TestAuthService" />
       </list>
