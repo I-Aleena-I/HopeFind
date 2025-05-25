@@ -1,55 +1,48 @@
-# HopeFind - Test Results
+# Test Results for Provided Test Cases
 
-**Developer**: Aleena Asif  
-**Module**: Account Management (Register/Login)
+## 1. ComplaintServiceTest
 
----
+- **Test:** Insert a new complaint for user_id=1
+- **Result:** ✅ Passed  
+  Complaint was inserted successfully.
 
-## Backend Manual Tests
+## 2. SearchServiceTest
 
-**Test Case 1**: Register new user  
-**Expected**: User registered and inserted in DB  
-**Result**: Passed ✅
+- **Test 1:** Search by keyword "missing"
+- **Result:** ✅ Passed  
+  Returned a non-null list (size ≥ 0).
 
-**Test Case 2**: Try registering with same email again  
-**Expected**: Registration fails (duplicate email)  
-**Result**: Passed ✅
+- **Test 2:** Filter by category "Crime" and location "Lahore"
+- **Result:** ✅ Passed  
+  All returned complaints matched the category and location.
 
-**Test Case 3**: Login with correct email/password  
-**Expected**: Dashboard opens  
-**Result**: Passed ✅
+## 3. TestAuthService
 
-**Test Case 4**: Login with wrong password  
-**Expected**: Error shown  
-**Result**: Passed ✅
+- **Test 1:** Register a new user  
+  Result: ✅ Passed
 
-**Test Case 5**: Login with unknown email  
-**Expected**: Error shown  
-**Result**: Passed ✅
+- **Test 2:** Attempt duplicate registration  
+  Result: ✅ Passed (duplicate prevented)
 
----
+- **Test 3:** Login with correct credentials  
+  Result: ✅ Passed
 
-## GUI Tests
+- **Test 4:** Login with wrong password  
+  Result: ✅ Passed (login rejected)
 
-**Action**: Open app  
-**Result**: Login screen shows — Passed ✅
+- **Test 5:** Login with non-existent email  
+  Result: ✅ Passed (login rejected)
 
-**Action**: Click "Go to Register"  
-**Result**: Register form opens — Passed ✅
+## 4. TestDatabaseConnection
 
-**Action**: Register valid user  
-**Result**: Success message appears — Passed ✅
+- **Test 1:** Single database connection  
+  Result: ✅ Passed (connection successful)
 
-**Action**: Register with existing email  
-**Result**: Error shown — Passed ✅
-
-**Action**: Login with correct info  
-**Result**: Dashboard appears — Passed ✅
+- **Test 2:** Open 3 sequential connections  
+  Result: ✅ Passed (all connections successful)
 
 ---
 
-## Database Connection Tests
-
-**Connection 1**: Passed ✅  
-**Connection 2**: Passed ✅  
-**Connection 3**: Passed ✅  
+# Summary
+All manual and automated tests executed successfully without errors.  
+No failed tests reported.
